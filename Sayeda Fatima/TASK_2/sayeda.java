@@ -1,0 +1,14 @@
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+        var fileUrl = 'images/Cv.pdf';
+        var fileName = 'Cv.pdf';
+
+        var link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
